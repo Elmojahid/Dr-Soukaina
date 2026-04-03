@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Soukaina - Médecin Généraliste à Casablanca | Cabinet Médical</title>
+    <meta name="description" content="Cabinet du Dr Soukaina, médecin généraliste à Casablanca. Consultations générales, suivi médical, prévention et soins courants. Prenez rendez-vous en ligne.">
+    <meta name="keywords" content="médecin généraliste Casablanca, cabinet médical, Dr Soukaina, consultation médicale, santé Maroc">
+    <meta name="author" content="Cabinet du Dr Soukaina">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dr Soukaina - Médecin Généraliste à Casablanca">
+    <meta property="og:description" content="Votre médecin généraliste de confiance à Casablanca. Consultations, suivi médical et prévention.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Application Styles & Scripts -->
+    <script src="tailwind-config.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-body text-slate-700 bg-slate-50 overflow-x-hidden">
+    
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/212600000000" target="_blank" 
+       class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl whatsapp-pulse transition-all duration-300 hover:scale-110 group">
+        <i data-lucide="message-circle" class="w-7 h-7"></i>
+        <span class="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-slate-800 text-white text-sm px-3 py-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
+            Discuter sur WhatsApp
+        </span>
+    </a>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-40 transition-all duration-500">
+        <div class="glass border-b border-white/20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-20">
+                    <!-- Logo -->
+                    <a href="#" class="flex items-center space-x-3 group">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary-500 to-medical-500 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-shadow">
+                            <i data-lucide="stethoscope" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h1 class="font-sans font-bold text-xl text-slate-800">Dr <span class="gradient-text">Soukaina</span></h1>
+                            <p class="text-xs text-slate-500">Médecine Générale</p>
+                        </div>
+                    </a>
+                    
+                    <!-- Desktop Navigation -->
+                    <div class="hidden md:flex items-center space-x-8">
+                        <a href="#about" class="text-slate-600 hover:text-primary-600 font-medium transition-colors relative group">
+                            À propos
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="#services" class="text-slate-600 hover:text-primary-600 font-medium transition-colors relative group">
+                            Services
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="#why-us" class="text-slate-600 hover:text-primary-600 font-medium transition-colors relative group">
+                            Pourquoi nous
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="#testimonials" class="text-slate-600 hover:text-primary-600 font-medium transition-colors relative group">
+                            Témoignages
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                        <a href="#contact" class="text-slate-600 hover:text-primary-600 font-medium transition-colors relative group">
+                            Contact
+                            <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-500 transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                    </div>
+                    
+                    <!-- CTA Button -->
+                    <div class="hidden md:block">
+                        <a href="#appointment" class="btn-ripple bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-700 hover:to-primary-600 text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+                            Prendre RDV
+                        </a>
+                    </div>
+                    
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-slate-100 transition-colors">
+                        <i data-lucide="menu" class="w-6 h-6 text-slate-700"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden glass border-b border-white/20">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#about" class="block py-2 text-slate-600 hover:text-primary-600 font-medium">À propos</a>
+                <a href="#services" class="block py-2 text-slate-600 hover:text-primary-600 font-medium">Services</a>
+                <a href="#why-us" class="block py-2 text-slate-600 hover:text-primary-600 font-medium">Pourquoi nous</a>
+                <a href="#testimonials" class="block py-2 text-slate-600 hover:text-primary-600 font-medium">Témoignages</a>
+                <a href="#contact" class="block py-2 text-slate-600 hover:text-primary-600 font-medium">Contact</a>
+                <a href="#appointment" class="block py-3 bg-gradient-to-r from-primary-600 to-primary-500 text-white text-center rounded-xl font-semibold">
+                    Prendre rendez-vous
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-medical-50"></div>
+        <div class="floating-shape w-96 h-96 bg-primary-300 top-20 -left-20"></div>
+        <div class="floating-shape w-80 h-80 bg-medical-300 bottom-20 right-0 animation-delay-2000"></div>
+        <div class="floating-shape w-64 h-64 bg-primary-200 top-1/2 left-1/2 animation-delay-4000"></div>
+        
+        <!-- Grid Pattern -->
+        <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#0ea5e9 1px, transparent 1px); background-size: 30px 30px;"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Content -->
+                <div class="reveal">
+                    <div class="inline-flex items-center space-x-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full shadow-sm mb-6">
+                        <span class="w-2 h-2 bg-medical-500 rounded-full animate-pulse"></span>
+                        <span class="text-sm font-medium text-slate-600">Ouvert aujourd'hui • 8h - 19h</span>
+                    </div>
+                    
+                    <h1 class="font-sans text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
+                        Votre médecin généraliste à 
+                        <span class="gradient-text">Casablanca</span>
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl text-slate-600 mb-8 leading-relaxed max-w-xl">
+                        Une médecine de proximité, à l'écoute de votre santé. Le Dr Soukaina vous accompagne avec professionnalisme et bienveillance pour tous vos soins médicaux.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+                        <a href="#appointment" class="btn-ripple inline-flex items-center justify-center space-x-2 bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-700 hover:to-primary-600 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                            <i data-lucide="calendar-check" class="w-5 h-5"></i>
+                            <span>Prendre rendez-vous</span>
+                        </a>
+                        <a href="tel:+212600000000" class="inline-flex items-center justify-center space-x-2 bg-white hover:bg-slate-50 text-slate-700 px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200">
+                            <i data-lucide="phone" class="w-5 h-5 text-primary-600"></i>
+                            <span>Appeler maintenant</span>
+                        </a>
+                    </div>
+                    
+                    <!-- Stats -->
+                    <div class="grid grid-cols-3 gap-6">
+                        <div>
+                            <div class="text-3xl font-bold text-slate-900">10+</div>
+                            <div class="text-sm text-slate-500">Années d'expérience</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-slate-900">5000+</div>
+                            <div class="text-sm text-slate-500">Patients soignés</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-bold text-slate-900">98%</div>
+                            <div class="text-sm text-slate-500">Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image -->
+                <div class="relative reveal">
+                    <div class="relative z-10">
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                            <img src="http://static.photos/medical/640x800/42" alt="Dr Soukaina - Médecin généraliste" class="w-full h-auto object-cover">
+                            <!-- Overlay gradient -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary-900/20 to-transparent"></div>
+                        </div>
+                        
+                        <!-- Floating Card -->
+                        <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl p-4 shadow-xl animate-float">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 bg-medical-100 rounded-xl flex items-center justify-center">
+                                    <i data-lucide="shield-check" class="w-6 h-6 text-medical-600"></i>
+                                </div>
+                                <div>
+                                    <div class="font-semibold text-slate-900">Certifiée</div>
+                                    <div class="text-sm text-slate-500">Ordre des Médecins</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Card 2 -->
+                        <div class="absolute -top-4 -right-4 bg-white rounded-2xl p-4 shadow-xl animate-float" style="animation-delay: 1s;">
+                            <div class="flex items-center space-x-2">
+                                <div class="flex -space-x-2">
+                                    <img src="http://static.photos/people/40x40/1" alt="Patient" class="w-8 h-8 rounded-full border-2 border-white">
+                                    <img src="http://static.photos/people/40x40/2" alt="Patient" class="w-8 h-8 rounded-full border-2 border-white">
+                                    <img src="http://static.photos/people/40x40/3" alt="Patient" class="w-8 h-8 rounded-full border-2 border-white">
+                                </div>
+                                <div class="text-sm">
+                                    <div class="font-semibold text-slate-900">+200</div>
+                                    <div class="text-slate-500">Avis 5★</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Decorative elements -->
+                    <div class="absolute -z-10 top-10 -right-10 w-72 h-72 bg-primary-200 rounded-full blur-3xl opacity-50"></div>
+                    <div class="absolute -z-10 -bottom-10 -left-10 w-72 h-72 bg-medical-200 rounded-full blur-3xl opacity-50"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Image -->
+                <div class="relative reveal">
+                    <div class="relative">
+                        <div class="absolute -inset-4 bg-gradient-to-r from-primary-500 to-medical-500 rounded-3xl opacity-20 blur-xl"></div>
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl">
+                            <img src="http://static.photos/office/600x700/15" alt="Cabinet médical du Dr Soukaina" class="w-full h-auto object-cover">
+                        </div>
+                        
+                        <!-- Experience Badge -->
+                        <div class="absolute -bottom-8 -right-8 bg-gradient-to-br from-primary-600 to-primary-500 text-white rounded-2xl p-6 shadow-xl">
+                            <div class="text-4xl font-bold">10+</div>
+                            <div class="text-sm opacity-90">Années d'expérience</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Content -->
+                <div class="reveal">
+                    <div class="inline-flex items-center space-x-2 bg-primary-50 px-4 py-2 rounded-full mb-6">
+                        <i data-lucide="user" class="w-4 h-4 text-primary-600"></i>
+                        <span class="text-sm font-semibold text-primary-700">À propos du médecin</span>
+                    </div>
+                    
+                    <h2 class="font-sans text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                        Le Dr Soukaina, votre partenaire santé à 
+                        <span class="gradient-text">Casablanca</span>
+                    </h2>
+                    
+                    <p class="text-slate-600 text-lg leading-relaxed mb-6">
+                        Diplômée de la Faculté de Médecine de Casablanca, le Dr Soukaina exerce la médecine générale avec passion et dévouement depuis plus de 10 ans. Sa pratique est fondée sur une approche humaine et personnalisée de la médecine.
+                    </p>
+                    
+                    <p class="text-slate-600 leading-relaxed mb-8">
+                        Convaincue qu'une relation de confiance entre médecin et patient est essentielle, elle prend le temps d'écouter, d'expliquer et de accompagner chacun de ses patients dans leur parcours de santé. Son cabinet moderne et accueillant reflète son engagement pour une médecine de qualité accessible à tous.
+                    </p>
+                    
+                    <!-- Skills -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-medical-100 rounded-lg flex items-center justify-center">
+                                <i data-lucide="graduation-cap" class="w-5 h-5 text-medical-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-slate-900">Formation Continue</div>
+                                <div class="text-sm text-slate-500">Mise à jour régulière des connaissances médicales</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center">
+                                <i data-lucide="heart-handshake" class="w-5 h-5 text-primary-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-slate-900">Approche Humaine</div>
+                                <div class="text-sm text-slate-500">Écoute attentive et empathie garanties</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-medical-100 rounded-lg flex items-center justify-center">
+                                <i data-lucide="languages" class="w-5 h-5 text-medical-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-slate-900">Multilingue</div>
+                                <div class="text-sm text-slate-500">Français, Arabe, Anglais</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#appointment" class="inline-flex items-center space-x-2 text-primary-600 font-semibold hover:text-primary-700 transition-colors group">
+                        <span>Prendre rendez-vous</span>
+                        <i data-lucide="arrow-right" class="w-5 h-5 transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-slate-50 relative overflow-hidden">
+        <!-- Background decoration -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-primary-100 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2"></div>
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-medical-100 rounded-full blur-3xl opacity-50 translate-y-1/2 -translate-x-1/2"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <div class="inline-flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm mb-6">
+                    <i data-lucide="activity" class="w-4 h-4 text-primary-600"></i>
+                    <span class="text-sm font-semibold text-primary-700">Nos Services</span>
+                </div>
+                <h2 class="font-sans text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                    Des soins médicaux complets pour toute la famille
+                </h2>
+                <p class="text-slate-600 text-lg">
+                    Le cabinet du Dr Soukaina propose une gamme complète de services médicaux, de la consultation générale au suivi personnalisé de votre santé.
+                </p>
+            </div>
+            
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
+                <!-- Service 1 -->
+                <div class="service-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-primary-500/30">
+                        <i data-lucide="stethoscope" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="font-sans text-xl font-bold text-slate-900 mb-3">Consultation Générale</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Diagnostic et traitement des affections courantes, conseils personnalisés pour votre bien-être quotidien.
+                    </p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="w-14 h-14 bg-gradient-to-br from-medical-500 to-medical-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-medical-500/30">
+                        <i data-lucide="clipboard-list" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="font-sans text-xl font-bold text-slate-900 mb-3">Suivi Médical</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Accompagnement régulier des patients chroniques, gestion des traitements et monitoring de la santé.
+                    </p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-primary-500/30">
+                        <i data-lucide="shield" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="font-sans text-xl font-bold text-slate-900 mb-3">Prévention</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Vaccinations, bilans de santé, conseils nutritionnels et prévention des maladies cardiovasculaires.
+                    </p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="w-14 h-14 bg-gradient-to-br from-medical-500 to-medical-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-medical-500/30">
+                        <i data-lucide="heart-pulse" class="w-7 h-7 text-white"></i>
+                    </div>
+                    <h3 class="font-sans text-xl font-bold text-slate-900 mb-3">Soins Courants</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Pansements, retraits de points, injections, et tous les soins médicaux de première nécessité.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Additional Info -->
+            <div class="mt-12 bg-gradient-to-r from-primary-600 to-primary-500 rounded-2xl p-8 text-white reveal">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
+                            <i data-lucide="clock" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-sans text-xl font-bold">Urgences médicales</h3>
+                            <p class="text-primary-100">Consultations rapides pour les cas urgents</p>
+                        </div>
+                    </div>
+                    <a href="tel:+212600000000" class="btn-ripple bg-white text-primary-600 px-8 py-4 rounded-full font-semibold hover:bg-primary-50 transition-colors">
+                        Appeler en cas d'urgence
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Content -->
+                <div class="reveal">
+                    <div class="inline-flex items-center space-x-2 bg-medical-50 px-4 py-2 rounded-full mb-6">
+                        <i data-lucide="star" class="w-4 h-4 text-medical-600"></i>
+                        <span class="text-sm font-semibold text-medical-700">Pourquoi nous choisir</span>
+                    </div>
+                    
+                    <h2 class="font-sans text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                        Un cabinet médical à l'écoute de vos besoins
+                    </h2>
+                    
+                    <p class="text-slate-600 text-lg leading-relaxed mb-8">
+                        Choisir son médecin est une décision importante. Découvrez pourquoi des centaines de patients à Casablanca font confiance au Dr Soukaina pour leur santé et celle de leur famille.
+                    </p>
+                    
+                    <!-- Features -->
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4 group">
+                            <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary-500 transition-colors duration-300">
+                                <i data-lucide="map-pin" class="w-6 h-6 text-primary-600 group-hover:text-white transition-colors"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-sans text-lg font-bold text-slate-900 mb-2">Proximité Géographique</h3>
+                                <p class="text-slate-600">Situé en plein centre de Casablanca, facilement accessible en transports et avec parking à proximité.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4 group">
+                            <div class="w-12 h-12 bg-medical-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-medical-500 transition-colors duration-300">
+                                <i data-lucide="calendar" class="w-6 h-6 text-medical-600 group-hover:text-white transition-colors"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-sans text-lg font-bold text-slate-900 mb-2">Grande Disponibilité</h3>
+                                <p class="text-slate-600">Horaires étendus du lundi au samedi, consultations d'urgence possibles et rendez-vous rapides.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4 group">
+                            <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-primary-500 transition-colors duration-300">
+                                <i data-lucide="award" class="w-6 h-6 text-primary-600 group-hover:text-white transition-colors"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-sans text-lg font-bold text-slate-900 mb-2">Expertise Reconnue</h3>
+                                <p class="text-slate-600">Plus de 10 ans d'expérience, formation continue régulière et membre de l'Ordre des Médecins du Maroc.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4 group">
+                            <div class="w-12 h-12 bg-medical-100 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-medical-500 transition-colors duration-300">
+                                <i data-lucide="heart" class="w-6 h-6 text-medical-600 group-hover:text-white transition-colors"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-sans text-lg font-bold text-slate-900 mb-2">Relation de Confiance</h3>
+                                <p class="text-slate-600">Une approche bienveillante, du temps pour chaque patient et un suivi personnalisé de votre santé.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image Grid -->
+                <div class="relative reveal">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <div class="rounded-2xl overflow-hidden shadow-lg">
+                                <img src="http://static.photos/medical/400x300/10" alt="Consultation médicale" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="rounded-2xl overflow-hidden shadow-lg">
+                                <img src="http://static.photos/office/400x400/20" alt="Cabinet moderne" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+                            </div>
+                        </div>
+                        <div class="space-y-4 pt-8">
+                            <div class="rounded-2xl overflow-hidden shadow-lg">
+                                <img src="http://static.photos/technology/400x400/30" alt="Équipement médical" class="w-full h-64 object-cover hover:scale-110 transition-transform duration-500">
+                            </div>
+                            <div class="rounded-2xl overflow-hidden shadow-lg">
+                                <img src="http://static.photos/people/400x300/40" alt="Accueil patients" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-500">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Trust Badge -->
+                    <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-white rounded-2xl px-8 py-4 shadow-xl">
+                        <div class="flex items-center space-x-3">
+                            <div class="flex text-yellow-400">
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                            </div>
+                            <span class="font-semibold text-slate-900">4.9/5</span>
+                            <span class="text-slate-500">sur Google</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section id="appointment" class="py-24 bg-gradient-to-br from-primary-50 via-white to-medical-50 relative overflow-hidden">
+        <!-- Background shapes -->
+        <div class="absolute top-20 left-10 w-64 h-64 bg-primary-200 rounded-full blur-3xl opacity-30"></div>
+        <div class="absolute bottom-20 right-10 w-64 h-64 bg-medical-200 rounded-full blur-3xl opacity-30"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Info -->
+                <div class="reveal">
+                    <div class="inline-flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm mb-6">
+                        <i data-lucide="calendar-plus" class="w-4 h-4 text-primary-600"></i>
+                        <span class="text-sm font-semibold text-primary-700">Prendre rendez-vous</span>
+                    </div>
+                    
+                    <h2 class="font-sans text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                        Réservez votre consultation en quelques clics
+                    </h2>
+                    
+                    <p class="text-slate-600 text-lg leading-relaxed mb-8">
+                        Remplissez le formulaire ci-contre et nous vous contacterons rapidement pour confirmer votre rendez-vous. Pour les urgences, n'hésitez pas à nous appeler directement.
+                    </p>
+                    
+                    <!-- Contact Info -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center">
+                                <i data-lucide="phone" class="w-5 h-5 text-primary-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-slate-500">Téléphone</div>
+                                <div class="font-semibold text-slate-900">+212 6 00 00 00 00</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-medical-100 rounded-xl flex items-center justify-center">
+                                <i data-lucide="mail" class="w-5 h-5 text-medical-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-slate-500">Email</div>
+                                <div class="font-semibold text-slate-900">contact@drsoukaina.ma</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center">
+                                <i data-lucide="clock" class="w-5 h-5 text-primary-600"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-slate-500">Horaires</div>
+                                <div class="font-semibold text-slate-900">Lun-Sam : 8h - 19h</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Note -->
+                    <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded-r-lg">
+                        <div class="flex items-start space-x-3">
+                            <i data-lucide="info" class="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5"></i>
+                            <p class="text-sm text-yellow-800">
+                                Les rendez-vous en ligne sont confirmés sous 24h. Pour une consultation le jour même, merci de nous appeler directement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Form -->
+                <div class="reveal">
+                    <form id="appointment-form" class="bg-white rounded-3xl p-8 shadow-xl">
+                        <h3 class="font-sans text-2xl font-bold text-slate-900 mb-6">Demande de rendez-vous</h3>
+                        
+                        <div class="space-y-5">
+                            <!-- Name -->
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate-700 mb-2">Nom complet *</label>
+                                <div class="relative">
+                                    <i data-lucide="user" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400"></i>
+                                    <input type="text" id="name" name="name" required
+                                           class="form-input w-full pl-12 pr-4 py-3 border border-slate-200 rounded-xl focus:outline-none focus:border-primary-500"
+                                           placeholder="Votre nom et prénom">
+                                </div>
+                            </div>
+                            
+                            <!-- Phone -->
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-slate-700 mb-2">Téléphone *</label>
+                                <div class="relative">
+                                    <i data-lucide="phone" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400"></i>
+                                    <input type="tel" id="phone" name="phone" required
+                                           class="form-input w-full pl-12 pr-4 py-3 border border-slate-200 rounded-xl focus:outline-none focus:border-primary-500"
+                                           placeholder="+212 6 XX XX XX XX">
+                                </div>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-slate-700 mb-2">Email</label>
+                                <div class="relative">
+                                    <i data-lucide="mail" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400"></i>
+                                    <input type="email" id="email" name="email"
+                                           class="form-input w-full pl-12 pr-4 py-3 border border-slate-200 rounded-xl focus:outline-none focus:border-primary-500"
+                                           placeholder="votre@email.com">
+                                </div>
+                            </div>
+                            
+                            <!-- Date -->
+                            <div>
+                                <label for="date" class="block text-sm font-medium text-slate-700 mb-2">Date souhaitée *</label>
+                                <div class="relative">
+                                    <i data-lucide="calendar" class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400"></i>
+                                    <input type="date" id="date" name="date" required
+                                           class="form-input w-full pl-12 pr-4 py-3 border border-slate-200 rounded-xl focus:outline-none focus:border-primary-500">
+                                </div>
+                            </div>
+                            
+                            <!-- Reason -->
+                            <div>
+                                <label for="reason" class="block text-sm font-medium text-slate-700 mb-2">Motif de consultation</label>
+                                <div class="relative">
+                                    <i data-lucide="file-text" class="absolute left-4 top-3 w-5 h-5 text-slate-400"></i>
+                                    <textarea id="reason" name="reason" rows="3"
+                                              class="form-input w-full pl-12 pr-4 py-3 border border-slate-200 rounded-xl focus:outline-none focus:border-primary-500 resize-none"
+                                              placeholder="Décrivez brièvement le motif de votre consultation..."></textarea>
+                                </div>
+                            </div>
+                            
+                            <!-- Submit -->
+                            <button type="submit" class="btn-ripple w-full bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-700 hover:to-primary-600 text-white py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center space-x-2">
+                                <i data-lucide="send" class="w-5 h-5"></i>
+                                <span>Confirmer ma demande</span>
+                            </button>
+                        </div>
+                        
+                        <p class="text-xs text-slate-500 text-center mt-4">
+                            En soumettant ce formulaire, vous acceptez notre politique de confidentialité.
+                        </p>
+                    </form>
+                    
+                    <!-- Success Message (hidden by default) -->
+                    <div id="success-message" class="hidden bg-white rounded-3xl p-8 shadow-xl text-center">
+                        <div class="w-20 h-20 bg-medical-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i data-lucide="check-circle" class="w-10 h-10 text-medical-600"></i>
+                        </div>
+                        <h3 class="font-sans text-2xl font-bold text-slate-900 mb-4">Demande envoyée !</h3>
+                        <p class="text-slate-600 mb-6">
+                            Nous avons bien reçu votre demande de rendez-vous. Notre équipe vous contactera dans les plus brefs délais pour confirmer votre consultation.
+                        </p>
+                        <button onclick="resetForm()" class="text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+                            Faire une nouvelle demande
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <div class="inline-flex items-center space-x-2 bg-primary-50 px-4 py-2 rounded-full mb-6">
+                    <i data-lucide="map-pin" class="w-4 h-4 text-primary-600"></i>
+                    <span class="text-sm font-semibold text-primary-700">Notre localisation</span>
+                </div>
+                <h2 class="font-sans text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                    Retrouvez-nous au cœur de Casablanca
+                </h2>
+                <p class="text-slate-600 text-lg">
+                    Notre cabinet est facilement accessible, avec parking à proximité et desservi par les transports en commun.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8 reveal">
+                <!-- Map -->
+                <div class="lg:col-span-2">
+                    <div class="map-container h-96 bg-slate-100">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.058438495084!2d-7.632687684798251!3d33.57311038073969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cd4778aa113b%3A0xb06c1d72f4a5e3c0!2sCasablanca%2C%20Maroc!5e0!3m2!1sfr!2sfr!4v1234567890"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="grayscale hover:grayscale-0 transition-all duration-500">
+                        </iframe>
+                    </div>
+                </div>
+                
+                <!-- Info Card -->
+                <div class="bg-slate-50 rounded-3xl p-8">
+                    <h3 class="font-sans text-xl font-bold text-slate-900 mb-6">Informations pratiques</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-primary-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-slate-900 mb-1">Adresse</div>
+                                <div class="text-slate-600 text-sm">
+                                    123 Boulevard Mohammed V<br>
+                                    20000 Casablanca, Maroc
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-medical-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="clock" class="w-5 h-5 text-medical-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-slate-900 mb-1">Horaires d'ouverture</div>
+                                <div class="text-slate-600 text-sm space-y-1">
+                                    <div class="flex justify-between">
+                                        <span>Lundi - Vendredi</span>
+                                        <span>8h - 19h</span>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <span>Samedi</span>
+                                        <span>9h - 14h</span>
+                                    </div>
+                                    <div class="flex justify-between text-slate-400">
+                                        <span>Dimanche</span>
+                                        <span>Fermé</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="car" class="w-5 h-5 text-primary-600"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-slate-900 mb-1">Accès</div>
+                                <div class="text-slate-600 text-sm">
+                                    • Parking public à 50m<br>
+                                    • Tramway L1 - Arrêt Mohammed V<br>
+                                    • Bus lignes 5, 15, 27
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://maps.google.com/?q=33.5731104,-7.6326877" target="_blank" 
+                       class="mt-6 w-full inline-flex items-center justify-center space-x-2 bg-white border-2 border-primary-500 text-primary-600 hover:bg-primary-50 px-6 py-3 rounded-xl font-semibold transition-colors">
+                        <i data-lucide="navigation" class="w-5 h-5"></i>
+                        <span>Obtenir l'itinéraire</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <div class="inline-flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm mb-6">
+                    <i data-lucide="message-circle" class="w-4 h-4 text-primary-600"></i>
+                    <span class="text-sm font-semibold text-primary-700">Témoignages</span>
+                </div>
+                <h2 class="font-sans text-3xl sm:text-4xl font-bold text-slate-900 mb-6">
+                    Ce que disent nos patients
+                </h2>
+                <p class="text-slate-600 text-lg">
+                    La satisfaction de nos patients est notre plus belle récompense. Découvrez leurs témoignages.
+                </p>
+            </div>
+            
+            <!-- Testimonials Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        "Une médecin à l'écoute et très professionnelle. Le Dr Soukaina prend le temps d'expliquer et rassure. Je la recommande vivement à toute la famille."
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <img src="http://static.photos/people/60x60/50" alt="Fatima B." class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-slate-900">Fatima B.</div>
+                            <div class="text-sm text-slate-500">Patient depuis 3 ans</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        "Cabinet moderne et très propre. Le personnel est accueillant et le Dr Soukaina est d'une grande gentillesse. Mon fils adore aller chez le médecin maintenant !"
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <img src="http://static.photos/people/60x60/51" alt="Karim M." class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-slate-900">Karim M.</div>
+                            <div class="text-sm text-slate-500">Patient depuis 2 ans</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        "Excellente prise en charge de mon diabète. Le suivi est rigoureux et les explications claires. Je me sens en confiance et bien accompagné."
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <img src="http://static.photos/people/60x60/52" alt="Ahmed T." class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-slate-900">Ahmed T.</div>
+                            <div class="text-sm text-slate-500">Patient depuis 5 ans</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 4 -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        "Disponible même en cas d'urgence. J'ai pu avoir un rendez-vous le jour même pour ma fille. Un grand merci pour votre réactivité !"
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <img src="http://static.photos/people/60x60/53" alt="Leila A." class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-slate-900">Leila A.</div>
+                            <div class="text-sm text-slate-500">Patient depuis 1 an</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 5 -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        "Enfin un médecin qui prend le temps ! Plus de 20 minutes de consultation, des questions pertinentes et un vrai suivi. Rare de nos jours."
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <img src="http://static.photos/people/60x60/54" alt="Youssef R." class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-slate-900">Youssef R.</div>
+                            <div class="text-sm text-slate-500">Patient depuis 4 ans</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 6 -->
+                <div class="testimonial-card bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="flex items-center space-x-1 mb-4">
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="w-5 h-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        "Le cabinet est très bien situé, facile d'accès et le personnel est adorable. Le Dr Soukaina est devenue notre médecin de famille !"
+                    </p>
+                    <div class="flex items-center space-x-3">
+                        <img src="http://static.photos/people/60x60/55" alt="Nadia K." class="w-12 h-12 rounded-full object-cover">
+                        <div>
+                            <div class="font-semibold text-slate-900">Nadia K.</div>
+                            <div class="text-sm text-slate-500">Patient depuis 2 ans</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-primary-600 to-primary-500 relative overflow-hidden">
+        <!-- Background pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative reveal">
+            <h2 class="font-sans text-3xl sm:text-4xl font-bold text-white mb-6">
+                Prenez soin de votre santé dès aujourd'hui
+            </h2>
+            <p class="text-primary-100 text-lg mb-8 max-w-2xl mx-auto">
+                Ne attendez pas que les symptômes s'aggravent. Le Dr Soukaina et son équipe sont là pour vous accompagner dans votre parcours de santé.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#appointment" class="btn-ripple inline-flex items-center justify-center space-x-2 bg-white text-primary-600 px-8 py-4 rounded-full font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+                    <i data-lucide="calendar-check" class="w-5 h-5"></i>
+                    <span>Prendre rendez-vous</span>
+                </a>
+                <a href="tel:+212600000000" class="inline-flex items-center justify-center space-x-2 bg-primary-700 hover:bg-primary-800 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    <span>+212 6 00 00 00 00</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-12 h-12 bg-gradient-to-br from-primary-500 to-medical-500 rounded-xl flex items-center justify-center">
+                            <i data-lucide="stethoscope" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-sans font-bold text-xl">Dr Soukaina</h3>
+                            <p class="text-xs text-slate-400">Médecine Générale</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Votre médecin généraliste de confiance à Casablanca. Une médecine de proximité, à l'écoute de votre santé.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-slate-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-colors">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 hover:bg-primary-600 rounded-lg flex items-center justify-center transition-colors">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-sans font-semibold text-lg mb-6">Liens rapides</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#about" class="text-slate-400 hover:text-white transition-colors text-sm">À propos</a></li>
+                        <li><a href="#services" class="text-slate-400 hover:text-white transition-colors text-sm">Nos services</a></li>
+                        <li><a href="#why-us" class="text-slate-400 hover:text-white transition-colors text-sm">Pourquoi nous choisir</a></li>
+                        <li><a href="#testimonials" class="text-slate-400 hover:text-white transition-colors text-sm">Témoignages</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Location (New column) -->
+                <div>
+                    <h4 class="font-sans font-semibold text-lg mb-6">Contact</h4>
+                    <ul class="space-y-4">
+                        <li class="flex items-start space-x-3 text-slate-400">
+                            <i data-lucide="map-pin" class="w-5 h-5 flex-shrink-0 mt-0.5"></i>
+                            <span class="text-sm">123 Boulevard Mohammed V, Casablanca</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-slate-400">
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                            <span class="text-sm">+212 6 00 00 00 00</span>
+                        </li>
+                        <li class="flex items-center space-x-3 text-slate-400">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                            <span class="text-sm">contact@drsoukaina.ma</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Working Hours (New column) -->
+                <div>
+                    <h4 class="font-sans font-semibold text-lg mb-6">Horaires</h4>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li class="flex justify-between">
+                            <span>Lundi - Vendredi</span>
+                            <span>8h00 - 19h00</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Samedi</span>
+                            <span>9h00 - 14h00</span>
+                        </li>
+                        <li class="flex justify-between text-slate-500">
+                            <span>Dimanche</span>
+                            <span>Fermé</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-slate-800 pt-8 mt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+                <p>&copy; 2026 Cabinet Dr Soukaina. Tous droits réservés.</p>
+                <div class="mt-4 md:mt-0 flex space-x-4">
+                    <a href="#" class="hover:text-white transition-colors">Mentions légales</a>
+                    <a href="#" class="hover:text-white transition-colors">Confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Entry Script -->
+    <script src="script.js"></script>
+</body>
+</html>
